@@ -27,7 +27,6 @@
 /.gradle/
 /.idea/
 /build/
-/src/main/
 /gradle/
 /gradlew
 /gradlew.bat
