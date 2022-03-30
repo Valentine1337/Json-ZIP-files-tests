@@ -1,0 +1,15 @@
+{
+  "firstName": "Valentin",
+  "lastName": "Gordeev",
+  "gender": "male",
+  "age": 26,
+  "address": {
+    "streetAddress": "101",
+    "city": "San Diego",
+    "state": "CA"
+  },
+  "phoneNumbers": [
+    "7349282382",
+    "7342255382"
+  ]
+}

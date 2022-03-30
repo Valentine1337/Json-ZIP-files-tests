@@ -8,7 +8,6 @@ import java.io.InputStreamReader;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-import java.util.zip.ZipInputStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
