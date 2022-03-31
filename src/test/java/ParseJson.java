@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ParseJson {
+
     @Test
     void jsonHardTest() throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();

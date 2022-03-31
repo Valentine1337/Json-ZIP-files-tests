@@ -15,12 +15,11 @@ public class ZipFilesTest {
     private static final String CSV_NAME = "csvExample.csv";
     private static final String XLSX_NAME = "xlxsExample.xlsx";
     private static final String PDF_NAME = "pdfExample.pdf";
-    private static final String ZIP_PATH = "src/test/resources/files/zipExample.zip";
+    ZipFile zipFile = new ZipFile("src/test/resources/files/zipExample.zip");
 
 
     @Test
     void testPdfFile() throws Exception {
-        ZipFile zipFile = new ZipFile(ZIP_PATH);
         ZipEntry entry = zipFile.getEntry(PDF_NAME);
         try (InputStream is = zipFile.getInputStream(entry)) {
             PDF pdf = new PDF(is);
@@ -31,7 +30,6 @@ public class ZipFilesTest {
 
     @Test
     void testXlxsFile() throws Exception {
-        ZipFile zipFile = new ZipFile(ZIP_PATH);
         ZipEntry entry = zipFile.getEntry(XLSX_NAME);
         try (InputStream is = zipFile.getInputStream(entry)) {
             XLS xls = new XLS(is);
@@ -46,7 +44,6 @@ public class ZipFilesTest {
 
     @Test
     void testCSVFile() throws Exception {
-        ZipFile zipFile = new ZipFile(ZIP_PATH);
         ZipEntry entry = zipFile.getEntry(CSV_NAME);
         try (InputStream is = zipFile.getInputStream(entry)) {
             CSVReader reader = new CSVReader(new InputStreamReader(is));
